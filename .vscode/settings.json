@@ -1,0 +1,14 @@
+{
+    "terminal.integrated.env.osx": {
+        "SFDX_SET_CLIENT_IDS": "sfdx-vscode"
+    },
+    "terminal.integrated.env.linux": {
+        "SFDX_SET_CLIENT_IDS": "sfdx-vscode"
+    },
+    "terminal.integrated.env.windows": {
+        "SFDX_SET_CLIENT_IDS": "sfdx-vscode"
+    },
+    "eslint.nodePath": "/Users/gurenax/.vscode/extensions/salesforce.salesforcedx-vscode-lwc-45.1.0/node_modules",
+    "html.suggest.angular1": false,
+    "html.suggest.ionic": false
+}
