@@ -17,7 +17,7 @@ export default class FullCalendarJs extends LightningElement {
       loadScript(this, FullCalendarJS + '/moment.min.js'),
       loadScript(this, FullCalendarJS + '/fullcalendar.min.js'),
       loadStyle(this, FullCalendarJS + '/fullcalendar.min.css'),
-      loadStyle(this, FullCalendarJS + '/fullcalendar.print.min.css')
+      // loadStyle(this, FullCalendarJS + '/fullcalendar.print.min.css')
     ])
     .then(() => {
       this.initialiseFullCalendarJs();
@@ -32,7 +32,8 @@ export default class FullCalendarJs extends LightningElement {
   }
 
   initialiseFullCalendarJs() {
-    const ele = this.template.querySelector('div');
+    
+    const ele = this.template.querySelector('div.fullcalendarjs');
 
     $(ele).fullCalendar({
       header: {
@@ -40,8 +41,8 @@ export default class FullCalendarJs extends LightningElement {
           center: 'title',
           right: 'month,basicWeek,basicDay'
       },
-      // defaultDate: '2019-01-12',
-      defaultDate: new Date(), // default day is today
+      defaultDate: '2019-01-12',
+      // defaultDate: new Date(), // default day is today
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       eventLimit: true, // allow "more" link when too many events
