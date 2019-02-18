@@ -35,6 +35,7 @@ export default class FullCalendarJs extends LightningElement {
     
     const ele = this.template.querySelector('div.fullcalendarjs');
 
+    // eslint-disable-next-line no-undef
     $(ele).fullCalendar({
       header: {
           left: 'prev,next today',
